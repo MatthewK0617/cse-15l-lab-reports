@@ -7,7 +7,7 @@
   ![Screenshot 2023-01-16 at 2 11 17 AM](https://user-images.githubusercontent.com/41757629/212653158-53598e11-cf31-4c47-b53c-cfb60a24a6e1.png)
 
 ## Connecting to the Server
-### To connect to the remote server, I did the following commands: 
+### To connect to the remote server, I used the following commands: 
 
 
   ![Screenshot 2023-01-16 at 2 02 35 AM](https://user-images.githubusercontent.com/41757629/212652886-0fb4066c-ff33-4d86-97f8-b260e4503636.png)
