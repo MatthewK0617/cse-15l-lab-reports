@@ -17,6 +17,17 @@ class Handler implements URLHandler {
                     str += parameters[1];
                     return String.format("String increased by %s! It's now %s", parameters[1], str);
                 }
+            } else if (url.getPath().contains("/search")) {
+                String[] parameters = url.getQuery().split("=");
+                // System.out.println(parameters[1]);
+                if (parameters[0].equals("s")) {
+                    for (int i = 0; i < parameters.length; i++) {
+                        if (parameters[i].contains("apple")) {
+                            return parameters[i];
+                        }
+                    }
+                    // return String.format("Found the strings %s", parameters[1], str);
+                }
             }
         }
         return "404 Not Found!"; // error if fails to perform any other tasks
