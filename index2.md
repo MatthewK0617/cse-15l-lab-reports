@@ -123,4 +123,4 @@ Here is the fixed code:
 
 
 ## Useful Insights
-
+As someone who's backend development experiences consist of Node.js and express servers, it is interesting to see the similarities and differences that exist between hosting servers on Java and JS. The use of JUnit to debug also gave me insight into how the debugging process can be simplified, as I had previously been manually testing each individual test case. 
