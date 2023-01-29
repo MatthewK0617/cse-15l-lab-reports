@@ -48,8 +48,78 @@ This query calls the method handleRequest. The argument is given as `/add-messag
 
 
 ## Bugs
-To connect to the remote server, use the following commands: 
 
+```
+  public void testReversed() {
+    int[] input1 = {};
+    assertArrayEquals(new int[] { 5, 4, 3 }, ArrayExamples.reversed(new int[] { 3, 4, 5 })); // 3
+    assertArrayEquals(new int[] {1, 1, 1}, ArrayExamples.reversed(new int[] { 1, 1, 1 })); // 4
+  }
+```
+Line 3 is a failure-inducing input. Below is the symptom: 
+
+```
+JUnit version 4.13.2
+..E
+Time: 0.008
+There was 1 failure:
+1) testReversed(ArrayTests)
+arrays first differed at element [0]; expected:<5> but was:<3>
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
+        at org.junit.Assert.internalArrayEquals(Assert.java:534)
+        at org.junit.Assert.assertArrayEquals(Assert.java:418)
+        at org.junit.Assert.assertArrayEquals(Assert.java:429)
+        at ArrayTests.testReversed(ArrayTests.java:19)
+        ... 30 trimmed
+Caused by: java.lang.AssertionError: expected:<5> but was:<3>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
+        ... 36 more
+
+FAILURES!!!
+Tests run: 2,  Failures: 1
+```
+
+Line 4 does not induce failure. Running the line standalone yields the following symptoms: 
+
+```
+JUnit version 4.13.2
+..
+Time: 0.007
+
+OK (2 tests)
+```
+
+The bug occurred because of two lines. Below is the buggy code:
+
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+
+Here is the fixed code:
+
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      // arr[i] = newArray[arr.length - i - 1];
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    // return arr;
+    return newArray; 
+  }
+```
 
 
 ## Useful Insights
