@@ -23,4 +23,4 @@ After connecting, feel free to test commands (the following are example commands
   ![Screenshot 2023-01-16 at 2 11 49 AM](https://user-images.githubusercontent.com/41757629/212653268-90e26b46-f370-417e-b9e3-3f7d9be5e500.png)
 
 
-The commands I tested included 'cd' to go to the parent of the current directory. Appending '.' after cd allows you to dictate what directory you will navigate to (backwards). For example, the single '.' (an relative path) will direct you to the current directory, while '..' would direct you to a directory one level up. Furthermore, entering 'ls' will display the contents in the current directory. Appending '-a' to 'ls' also yields a view of the hidden content. 
+The commands displayed included 'cd' to go to the parent of the current directory. Appending '.' after cd allows you to dictate what directory you will navigate to (backwards). For example, the single '.' (an relative path) will direct you to the current directory, while '..' would direct you to a directory one level up. Furthermore, entering 'ls' will display the contents in the current directory. Appending '-a' to 'ls' also yields a view of the hidden content. 
