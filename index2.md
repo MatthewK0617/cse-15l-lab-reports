@@ -1,10 +1,7 @@
 # Week 2, 3
 
 ## StringServer
-
-`import java.io.IOException;
-import java.net.URI;
-
+`
 class Handler implements URLHandler {
     String str = "";
 
@@ -22,7 +19,8 @@ class Handler implements URLHandler {
         }
     }
 }
-
+`
+`
 class StringServer {
     public static void main(String[] args) throws IOException {
         if (args.length == 0) {
@@ -35,7 +33,6 @@ class StringServer {
         Server.start(port, new Handler());
     }
 }
-
 `
 
 ## Bugs
