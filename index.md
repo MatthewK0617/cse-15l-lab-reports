@@ -1,7 +1,7 @@
 # Week 1
 
 ## Installing VScode
-### To install VScode, you should go to their website and install the optimal version for your machine. Once you open VScode, you should see the integrated terminal which is where you will be running the commands that will be displayed later in the tutorial. 
+### **To install VScode, you should go to their website and install the optimal version for your machine. Once you open VScode, you should see the integrated terminal which is where you will be running the commands that will be displayed later in the tutorial. **
 
 
   ![Screenshot 2023-01-16 at 2 11 17 AM](https://user-images.githubusercontent.com/41757629/212653158-53598e11-cf31-4c47-b53c-cfb60a24a6e1.png)
