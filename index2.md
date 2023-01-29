@@ -1,7 +1,7 @@
 # Week 2, 3
 
 ## StringServer
-`
+```
 class Handler implements URLHandler {
     String str = "";
 
@@ -19,8 +19,7 @@ class Handler implements URLHandler {
         }
     }
 }
-`
-`
+
 class StringServer {
     public static void main(String[] args) throws IOException {
         if (args.length == 0) {
@@ -33,7 +32,7 @@ class StringServer {
         Server.start(port, new Handler());
     }
 }
-`
+```
 
 ## Bugs
 To connect to the remote server, use the following commands: 
