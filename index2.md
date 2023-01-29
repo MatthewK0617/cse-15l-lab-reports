@@ -101,13 +101,13 @@ The bug occurred because of two lines. Below is the buggy code:
   static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = newArray[arr.length - i - 1];
+      arr[i] = newArray[arr.length - i - 1]; // 4
     }
     return arr;
   }
 ```
 
-Here is the fixed code:
+Here is the debugged code:
 
 ```
   static int[] reversed(int[] arr) {
@@ -120,6 +120,7 @@ Here is the fixed code:
     return newArray; 
   }
 ```
+Prior to the fix, the code had been taking `arr` and updating the values within it with the `newArray`. Because `newArray` is an an integer array of 0s, `arr` would be updated to be an array consisting of `0s`. Switching the array references in line 4 and returning `newArray` gives you the correct result. 
 
 
 ## Useful Insights
