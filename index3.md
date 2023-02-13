@@ -34,3 +34,8 @@ matthewkim@Matthews-MacBook-Pro written_2 % find ./non-fiction -print
 ...
 ```
 As expected, the command returns an in-order list of directories and files. The `...` connotes the existence of more files and directories that were not listed in this tutorial to save space. 
+
+### `-newer file`
+Using `find [directory] -newer file` will return all the files and directories created after the directory of interest. 
+
+
