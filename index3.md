@@ -24,4 +24,13 @@ matthewkim@Matthews-MacBook-Pro written_2 % find ./travel_guides -print
 ./travel_guides/berlitz1/IntroMalaysia.txt
 
 ...
+
+matthewkim@Matthews-MacBook-Pro written_2 % find ./non-fiction -print  
+./non-fiction
+./non-fiction/OUP
+./non-fiction/OUP/Berk
+./non-fiction/OUP/Berk/ch2.txt
+
+...
 ```
+As expected, the command returns an in-order list of directories and files. The `...` connotes the existence of more files and directories that were not listed in this tutorial to save space. 
