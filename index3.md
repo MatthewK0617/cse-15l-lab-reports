@@ -39,3 +39,5 @@ As expected, the command returns an in-order list of directories and files. The 
 Using `find [directory] -newer file` will return all the files and directories created after the directory of interest. 
 
 
+Source: https://www.geeksforgeeks.org/find-command-in-linux-with-examples/ 
+
