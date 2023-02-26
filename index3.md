@@ -79,5 +79,5 @@ matthewkim@Matthews-MacBook-Pro written_2 % find ./travel_guides -size +250
 The first command returns a list of files that have more than 500 blocks, the only one being `WhereToItaly.txt`. The second command returns a slightly longer list, which is to be expected since we decreased the block requirement. This command can be useful when looking for files of certain sizes within your system so that you can inspect them via the path returned. 
 
 
-Source: https://www.geeksforgeeks.org/find-command-in-linux-with-examples/ 
+Source: [Geeks for Geeks](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/)
 
