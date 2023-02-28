@@ -3,15 +3,13 @@ The following will show you how to go quickly test java files using JUnit, and m
 
 ## Login to your server. 
 As you can see in the following code, I was able to successfully login to my server using the following command:
-`ssh cse15lwi23ant#ieng6.ucsd.edu`
+`ssh cse15lwi23ant@ieng6.ucsd.edu`
 
 <img width="680" alt="Screenshot 2023-02-27 at 7 05 52 PM" src="https://user-images.githubusercontent.com/41757629/221743212-f2999ed9-c560-411b-aeeb-54093dc5af05.png">
 
 
 ## Clone the directory.
-The following command will allow you to copy the sample directory, which you will be debugging, onto your server.
-`git clone https://github.com/MatthewK0617/lab7`
-Remember to use your github account to first fork the directory. 
+The following command will allow you to copy the sample directory, which you will be debugging, onto your server: `git clone https://github.com/MatthewK0617/lab7`. Remember to use your github account to first fork the directory. 
 
 <img width="566" alt="Screenshot 2023-02-27 at 7 07 17 PM" src="https://user-images.githubusercontent.com/41757629/221743363-a5ea338b-1daa-4d5b-ba4c-0f88840482a1.png">
 
