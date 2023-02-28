@@ -38,6 +38,6 @@ After making the necessary revisions (see the image below), press **Esc** (the e
 
 
 ## Testing after Revision
-After revising the files, it is important to test again to make sure that you successfully debugged the files. To rerun the commands, you can retype them or use the built in terminal arrow commands to navigate to your previous command. For example, to compile the java files again, you would have to enter `<up><up><up><up><enter>`, while starting the JVM would then also require `<up><up><up><up><enter>`. 
+After revising the files, it is important to test again to make sure that you successfully debugged the files. To rerun the commands, you can retype them or use the built in terminal arrow commands to navigate to your previous command. For example, to compile the java files again, you would have to enter `<up><up><up><up><enter>`, while starting the JVM would then also require `<up><up><up><up><enter>`; this is because the command to compile the java files was four commands up in the command line history, while starting the JVM (which is only three commands up prior to the compilation) will then also be four commands up in the history. 
 
 <img width="874" alt="Screenshot 2023-02-27 at 8 06 03 PM" src="https://user-images.githubusercontent.com/41757629/221751009-b62e0e54-d09a-436a-9a80-ec86791470a7.png">
