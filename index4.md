@@ -3,7 +3,7 @@ The following will show you how to go quickly test java files using JUnit, and m
 
 ## Login to your server. 
 As you can see in the following code, I was able to successfully login to my server using the following command:
-`ssh cse15lwi23ant@ieng6.ucsd.edu <enter>`
+`ssh cs15lwi23ant@ieng6.ucsd.edu <enter>`
 
 <img width="680" alt="Screenshot 2023-02-27 at 7 05 52 PM" src="https://user-images.githubusercontent.com/41757629/221743212-f2999ed9-c560-411b-aeeb-54093dc5af05.png">
 
@@ -42,3 +42,19 @@ After making the necessary revisions (see the image below), press `<Esc>` (the e
 After revising the files, it is important to test again to make sure that you successfully debugged the files. To rerun the commands, you can retype them or use the built in terminal arrow commands to navigate to your previous command. For example, to compile the java files again, you would have to enter `<up><up><up><up><enter>`, while starting the JVM would then also require `<up><up><up><up><enter>`; this is because the command to compile the java files was four commands up in the command line history, while starting the JVM (which is only three commands up prior to the compilation) will then also be four commands up in the history. 
 
 <img width="874" alt="Screenshot 2023-02-27 at 8 06 03 PM" src="https://user-images.githubusercontent.com/41757629/221751009-b62e0e54-d09a-436a-9a80-ec86791470a7.png">
+
+## Committing Changes to Github
+Now, all that's left is to commit your changes to Github. To do so, first enter the command `git commit -a <enter>`. This automatically stages all changes made in your files (removes the need to do `git add [filename] <enter>`. However, be cautious when using the command since it will not add new files to the repository. Next, you can type in `git push` to push your commits to github. 
+
+![Screenshot 2023-03-11 at 3 26 47 PM](https://user-images.githubusercontent.com/41757629/224516065-2bff73b8-d105-4386-bf71-fcd90d10fd40.png)
+
+Upon committing, you may be prompted with this screen. This is where you would enter your commit message (if it is your first commit after file changes).
+
+![Screenshot 2023-03-11 at 3 33 08 PM](https://user-images.githubusercontent.com/41757629/224516222-77ead294-2c8f-4395-9552-efa79ec55a8a.png)
+
+To enter a commit message, press `i` to insert and type your commit message. Afterwards, enter `:wq <enter>` to exit the commit UI. 
+
+![Screenshot 2023-03-11 at 3 34 57 PM](https://user-images.githubusercontent.com/41757629/224516311-ff699d93-0650-4e8c-b02f-9ab12d93271e.png)
+
+
+
