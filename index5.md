@@ -48,6 +48,9 @@ Exiting when there is a compile error is important not only because it is comput
 
 We should also add a message at the beginning so we know that the files completed cloning so that we can narrow down our range of errors. Adding `echo 'Finished cloning'` below our `git clone...` command will accomplish this. Finally, since we don't want the bash file to get confused when we clone new student submissions, we should delete any prior existing student submissions using the command `rm -rf student-submission`. 
 
+## Cleaning Up
+To exit the file and ensure that it is saved, you can enter the command `<Esc> :wq <enter>`.
+
 
 ## Final Code
 ```
