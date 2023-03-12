@@ -23,7 +23,7 @@ To compile the necessary java files, we can use the `javac` command. Before we d
 
 
 ## Output
-In order to actually see the results, we should redirect the output into a text file. This can be done by adding ` > out.txt` to the end of the execution command. The final command should look like so: `java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > out.txt`. We can then display the output by using `cat out.txt`. To narrow down the scope of our search to just the number of correct and incorrect cases, we can use `grep` to find the word "Failures" (note that `grep` is case sensitive); we can then redirect this to another text file which we can call `out1.txt`. We can choose whether we want to display `out.txt` or `out1.txt`, it is a matter of preference. 
+In order to actually see the results, we should redirect the output into a text file. This can be done by adding ` > out.txt` to the end of the execution command. The final command should look like so: `java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > out.txt`. We can then display the output by using `cat out.txt`. To narrow down the scope of our search to just the number of correct and incorrect cases, we can use `grep` to find the word "Failures" (note that `grep` is case sensitive); we can then redirect this to another text file which we can call `out1.txt`. We can choose whether we want to display `out.txt` or `out1.txt`, it is a matter of preference. Here is the the code: `grep -n "Failures" out.txt > out1.txt`. 
 
 ## Hidden Cases
 Although our script is complete, it is missing some important components that will allow us to identify specific problems grouped under error handling. For instance, what should we do if the file does not exist? To ensure that we grade only if the file exists, we can create an `exit` clause for when the file doesn't exist — along with a message so that we know why the code exited. The following code block accomplishes this: 
@@ -76,12 +76,6 @@ fi
 
 java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > out.txt
 grep -n "Failures" out.txt > out1.txt
-
-if [ -s out.txt ]
-then
-        echo 'empty tester'
-
-fi
 
 cat out.txt
 ```
