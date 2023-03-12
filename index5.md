@@ -79,3 +79,15 @@ grep -n "Failures" out.txt > out1.txt
 
 cat out.txt
 ```
+
+## Testing
+Here are a few examples using the `grade.sh` script in the command `bash grade.sh [github link]`. 
+
+Github 1: https://github.com/ucsd-cse15l-f22/list-methods-compile-error
+This student's code is missing a semi-colon at the end of one of his lines. We can see that the code properly deals with this error by exiting and telling us that there is a compile error. 
+
+![Screenshot 2023-03-12 at 3 10 39 PM](https://user-images.githubusercontent.com/41757629/224576738-f452c2c4-47de-478e-815f-9c255d20b8bd.png)
+
+![Screenshot 2023-03-12 at 3 13 20 PM](https://user-images.githubusercontent.com/41757629/224576848-5620a7a7-8cf9-4b1b-98f6-3501691c6054.png)
+
+Github 2: 
