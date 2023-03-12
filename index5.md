@@ -88,6 +88,21 @@ This student's code is missing a semi-colon at the end of one of his lines. We c
 
 ![Screenshot 2023-03-12 at 3 10 39 PM](https://user-images.githubusercontent.com/41757629/224576738-f452c2c4-47de-478e-815f-9c255d20b8bd.png)
 
+
+Github 2: https://github.com/ucsd-cse15l-f22/list-methods-filename
+This student's code is stored in a file with the wrong file name. We can see that the code properly deals with this error by exiting and telling us that the file could not be found. 
+
 ![Screenshot 2023-03-12 at 3 13 20 PM](https://user-images.githubusercontent.com/41757629/224576848-5620a7a7-8cf9-4b1b-98f6-3501691c6054.png)
 
-Github 2: 
+
+Github 3: https://github.com/ucsd-cse15l-f22/list-methods-nested
+This student's code is stored in another nested directory. We can see that the code properly deals with this error by exiting and telling us that the file could not be found. 
+
+![Screenshot 2023-03-12 at 3 18 29 PM](https://user-images.githubusercontent.com/41757629/224577129-595b9cbb-cbcf-4282-84ff-00790d978bfa.png)
+
+
+Github 4: https://github.com/ucsd-cse15l-f22/list-examples-subtle
+This student's code has subtle bugs. We can see that the code properly deals with this error by displaying where the failures were. 
+
+![Screenshot 2023-03-12 at 3 15 27 PM](https://user-images.githubusercontent.com/41757629/224576954-79737741-19fd-48a9-a245-68463ffd2fca.png)
+
